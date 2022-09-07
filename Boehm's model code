@@ -1,0 +1,28 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+     int SDE,years,Total_effort;
+   double AME,ACT,effort;
+//   cout<<"enter the AME :"<<endl;
+//   cin>>AME;
+   cout<<" enter the ACT in % :"<<endl;
+   cin>>ACT;
+   ACT=ACT*0.01;
+   cout<<"enter the development effort :"<<endl;
+   cin>>SDE;
+   cout<<"enter the life time :"<<endl;
+   cin>>years;
+   AME=ACT*SDE;
+   cout<<"AME  is : "<<AME<<"PM"<<endl;
+   effort=AME*years;
+   cout<<"effort is : "<<effort<<"PM"<<endl;
+   Total_effort=SDE+effort;
+   cout<<"Total effort is : "<<Total_effort<<"PM"<<endl;
+
+    return 0;
+}
