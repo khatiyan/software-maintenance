@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    cout<<"Enter the number of person-year of effort: ";
+    int effort;
+    cin>>effort;
+    float a1=5.2;
+    float b1=0.91;
+    cout<<"Effort in person-month will be: "<<effort*12<<endl<<endl;
+    cout<<"******Waltson Felix Model*********"<<endl;
+    int LOC = pow((12*effort)/a1, b1);
+    float a2=4.6;
+    float b2=0.36;
+    cout<<"Total Loc is: "<<LOC<<endl;
+    cout<<"Total Development time in Waltson-Felix model in months will be: "<<pow(a2*LOC,b2)<<endl<<endl;;
+   
+     cout<<"******   SEL Model  *********"<<endl;
+     a1=1.4;
+    b1=0.93;
+     LOC = pow((12*effort)/a1, b1);
+     a2=4.1;
+    b2=0.26;
+    cout<<"Total Loc is: "<<LOC<<endl;
+    cout<<"Total Development time in SEL model in months will be: "<<pow(a2*LOC,b2);
+   
+    return 0;
+}
